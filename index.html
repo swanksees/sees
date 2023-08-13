@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sees Software - Personal Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <button id="dark-mode-toggle">Toggle Dark Mode</button>
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <h1><a href="#">Sees Software</a></h1>
+      </div>
+      <div class="menu-icon" onclick="toggleNavLinks()">&#9776;</div> <!-- Hamburger menu icon -->
+      <div class="nav-links" id="nav-links">
+        <!-- Navigation links -->
+        <a href="#about">About</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+    <div class="hero">
+      <div class="hero-content">
+        <h1>Welcome to Sees Software</h1>
+        <p>Empowering aspiring software developers and engineers</p>
+      </div>
+    </div>
+  </header>
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <div class="profile-image">
+          <img src="https://media.licdn.com/dms/image/D5603AQEQ0N-uMffYcg/profile-displayphoto-shrink_200_200/0/1688360729273?e=1694044800&v=beta&t=-0ornf40b64lJoEV5VbbG84Iib60WVSgwUKIgsGJF7s" alt="Profile Image">
+        </div>
+        <div class="bio">
+          <h3>Cesar Villegas</h3>
+          <p>My friends call me "Ceez" which I like to play around with and spell as "Sees". I am a passionate software developer based in Las Vegas, Nevada. With a strong foundation in web development, I strive to create user-friendly websites that meet clients' goals and establish a strong online presence. In my free time, I enjoy playing video games, listening to music, working out, and exploring new technologies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="expertise">
+    <div class="container">
+      <h2>My Expertise</h2>
+      <div class="expertise-container">
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSsRckLEZJzQZdlYsuVny3zWE7n8GVcU1Ufw&usqp=CAU" alt="Web Design">
+          <h3>Web Design</h3>
+          <p>Creating visually stunning and user-friendly websites using modern design principles and best practices.</p>
+        </div>
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJRTcE3IUoNCnfve6r3RJbXo0QLeIGaMcZDA&usqp=CAU" alt="Web Development">
+          <h3>Web Development</h3>
+          <p>Building responsive and scalable web applications with the latest front-end and back-end technologies.</p>
+        </div>
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR__NzYtPqtQ2eXr0Ph5fJidGNWPW0U2IESsQ&usqp=CAU" alt="UI/UX Design">
+          <h3>UI/UX Design</h3>
+          <p>Designing intuitive and engaging user interfaces to enhance the overall user experience and satisfaction.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Your Name">
+        <input type="email" name="email" placeholder="Your Email">
+        <textarea name="message" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="bar-chart-section">
+    <div class="container">
+      <h2>Expertise Visualization</h2>
+      <div id="bar-chart"></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Sees Software. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
+
+</body>
+
+</html>
