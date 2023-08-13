@@ -1,0 +1,187 @@
+/* General styles for mobile devices */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .logo h1 a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    display: none; /* Hide the navigation links initially */
+  }
+  
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+  }
+  
+  .menu-icon {
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    display: block;
+  }
+  
+  /* Hero section styles */
+  .hero {
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    animation: slideIn 2s ease-in-out;
+  }
+  
+  /* Container styles */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+  
+  .container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  /* About Me section styles */
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
+  
+  .about-content .profile-image img {
+    width: 200px;
+    border-radius: 50%;
+  }
+  
+  /* My Expertise section styles */
+  .expertise-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the cards horizontally */
+    gap: 20px; /* Add some space between the cards */
+    margin-top: 40px;
+  }
+  
+  .card {
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 20px;
+    width: calc(50% - 20px); /* Show two cards per row for better mobile layout on larger screens (e.g., tablets) */
+    max-width: 400px; /* Limit the maximum width of each card */
+    margin-bottom: 40px;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Adjust the card styles for better mobile layout */
+  @media (max-width: 768px) {
+    .card {
+      width: 100%; /* Show one card per row on smaller screens (e.g., phones) */
+      max-width: none; /* Remove the maximum width on smaller screens */
+    }
+  }
+  
+  /* Contact Me section styles */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .contact-form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Dark mode styles */
+  .dark-mode {
+    background-color: #282828;
+    color: #0f0f0f;
+  }
+  
+  /* Animation keyframe for slide-in effect */
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Bar chart section styles */
+  #bar-chart-section {
+    margin-top: 40px;
+  }
+  
+  #bar-chart {
+    margin: 40px auto;
+  }
+  
+  .bar {
+    opacity: 0.8;
+  }
+  
+  .bar:hover {
+    opacity: 1;
+  }
+  
